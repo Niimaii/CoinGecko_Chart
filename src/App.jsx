@@ -1,8 +1,15 @@
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import CryptoDetail from './routes/CryptoDetail';
+import CryptoHome from './routes/CryptoHome';
+
 function App() {
   return (
-    <div className='App'>
-      <h1 className='text-center'>App</h1>
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route path='/' element={<CryptoHome />} />
+        <Route path='/coin:id' element={<CryptoDetail />} />
+      </Routes>
+    </BrowserRouter>
   );
 }
 
