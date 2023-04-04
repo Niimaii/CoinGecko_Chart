@@ -45,7 +45,7 @@ function HistoryChart() {
 
   const coinChartData = response.prices.map((value) => ({
     x: value[0],
-    y: value[1].toFixed(2),
+    y: value[1],
   }));
 
   const options = {
