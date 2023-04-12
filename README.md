@@ -12,4 +12,6 @@ git clone https://github.com/Niimaii/CoinGecko_Chart.git
 
 ## Launching
 
+Before anything make sure to get all the prerequisites with $npm install 
+
 Run $npm run dev
